@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head id="headnav">
+        <title>Ana Sayfa</title>
+    </head>
+<body>
+    <div id="topnav"></div>
+    
+    <div class="regbody">
+       
+    <form id="registerForm" onsubmit="registeredForm(event)">
+        <h1 class="text-light w-100 text-center rounded mx-auto d-block">KAYIT OL</h1>
+        <label class="text-light text-center w-100 m-auto p-4 fs-4">Lütfen aşağıdaki bilgileri doldurun...</label>
+        <table class="w-25 m-auto">
+        <tr>
+            <td><label class="text-light" for="name">Ad:</label></td>
+            <td><input class="form-control text-dark" type="text" id="namee" name="name" maxlength="45" required></td>
+        </tr>
+        <tr>
+            <td><label class="text-light" for="email">E-posta:</label></td>
+            <td><input class="form-control text-dark" type="email" id="email" name="email" maxlength="45" required></td>
+        </tr>
+        <tr>
+            <td><label class="text-light" for="adress">Adres:</label></td>
+            <td><input class="form-control text-dark" type="text" id="adress" name="adress" maxlength="255" required></td>
+        </tr>
+        <tr>
+            <td><label class="text-light" for="tel">Telefon:</label></td>
+            <td><input class="form-control text-dark" type="tel" id="tel" name="tel" pattern="[0-9]{10}" maxlength="10" required></td>
+        </tr>
+        <tr>
+            <td><label class="text-light" for="password">Şifre:</label></td>
+            <td><input class="form-control text-dark" type="password" id="password" name="password" maxlength="8" required></td>
+        </tr>
+        <tr>
+            <td></td> <!--onclick="registeredForm()"-->
+        </tr>
+        </table>  
+        <div class="w-100">
+            <input  type="submit" class="btn btn-success m-2 w-25 rounded mx-auto d-block" value="Kayıt Ol">
+        </div>     
+    </form>
+    </div>
+    
+    <script src="scriptregister.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>
